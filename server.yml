@@ -30,3 +30,4 @@
     - { role: ntp, tags: [ntp] }
     - { role: users, tags: [users] }
     - { role: sshd, tags: [sshd] }
+    - { role: nickjj.docker, tags: [docker] }

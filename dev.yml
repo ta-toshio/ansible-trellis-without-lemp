@@ -10,3 +10,4 @@
     - { role: ferm, tags: [ferm] }
     - { role: ntp, tags: [ntp] }
     - { role: sshd, tags: [sshd] }
+    - { role: nickjj.docker, tags: [docker] }

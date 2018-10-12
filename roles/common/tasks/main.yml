@@ -1,6 +1,5 @@
 ---
 
-
 - name: Checking essentials
   apt:
     name: "{{ item.key }}"
