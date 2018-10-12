@@ -1,0 +1,16 @@
+---
+
+
+- name: Checking essentials
+  apt:
+    name: "{{ item.key }}"
+    state: "{{ item.value }}"
+    cache_valid_time: "{{ apt_cache_valid_time }}"
+  with_dict: "{{ apt_packages }}"
+
+- name: Retrieve SSH client IP
+  ipify_facts:
+  connection: local
+  become: no
+  when: env != 'development' and ssh_client_ip_lookup | default(true)
+  tags: [fail2ban, ferm]

@@ -1,4 +1,5 @@
 apt_cache_valid_time: 3600
+apt_package_state: present
 apt_security_package_state: latest
 ntp_timezone: Etc/UTC
 ntp_manage_config: true
