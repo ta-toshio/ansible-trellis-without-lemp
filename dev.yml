@@ -1,0 +1,11 @@
+---
+- name: "Server Setup"
+  hosts: web:&development
+  become: yes
+  remote_user: vagrant
+
+  roles:
+    - { role: fail2ban, tags: [fail2ban] }
+    - { role: ferm, tags: [ferm] }
+    - { role: ntp, tags: [ntp] }
+    - { role: sshd, tags: [sshd] }

@@ -1,0 +1,5 @@
+# Documentation: https://roots.io/trellis/docs/security/
+vault_users:
+  - name: "{{ admin_user }}"
+    password: example_password
+    salt: "generateme"

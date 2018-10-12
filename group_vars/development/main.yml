@@ -1,0 +1,3 @@
+env: development
+ferm_enabled: false
+web_user: vagrant
